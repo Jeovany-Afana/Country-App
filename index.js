@@ -12,7 +12,7 @@ let countries = [];
 
 async function getCountries() {
   await
-     fetch('https://restcountries.com/v3.1/all')
+     fetch('countries.json')
     .then((res) => res.json())
     .then((data) => countries = data);
     
@@ -79,7 +79,19 @@ getCountries().then(() => showCountries(inputRange.value, event.target.value));
 getCountries().then(() => showCountries(inputRange.value, inputSearch.value));
 
 
-   
+   // 2. Ensuite, enregistre le Service Worker pour la fonctionnalité hors ligne
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+      navigator.serviceWorker
+          .register('/service-worker.js')
+          .then(registration => {
+              console.log('Service Worker enregistré avec succès', registration);
+          })
+          .catch(error => {
+              console.log('Service Worker échec de l\'enregistrement:', error);
+          });
+  });
+}
 
 // 3 - Passer les données à une variable
 
