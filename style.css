@@ -1,0 +1,74 @@
+
+.filter-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+input {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+}
+input:focus {
+  border-radius: 30px;
+  background: rgb(238, 238, 238);
+}
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="range"] {
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+.range-container span {
+  font-size: 1.2rem;
+  transform: translateY(-3px);
+}
+
+.countries-container
+  {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne */
+    justify-content: space-between; /* Espace entre les éléments */
+  }
+
+.countries-container
+{
+  display: flex;
+    min-width: 280px;
+    /* border: 1px solid #16d9e7; */
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.084);
+}
+.card {
+  flex: 1 1 calc(25% - 10px); /* Chaque élément prend 25% de la largeur moins l'espace */
+  margin: 5px;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 20px;
+  height: fit-content;
+}
+  
+
+img {
+  width: 100%;
+  height: 50%;
+  margin: 10px 0;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+}
+
+li
+  {
+    list-style-type: none;
+  }
