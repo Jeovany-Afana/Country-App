@@ -1,7 +1,7 @@
 {
     "name": "CountryApp",
     "short_name": "Countries",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#317EFB",
@@ -12,7 +12,7 @@
         "sizes": "192x192"
       },
       {
-        "src": "/icons/logo1.jpeg",
+        "src": "./icons/logo1.jpeg",
         "type": "image/jpeg",
         "sizes": "512x512"
       }
