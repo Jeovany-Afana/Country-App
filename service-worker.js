@@ -2,11 +2,12 @@ const CACHE_NAME = 'country-app-cache-v1';
 
 // Les fichiers à mettre en cache
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/index.js',
-  '/countries.json' // Si tu utilises un fichier JSON pour les données
+  './',
+  './index.html',
+  './style.css',
+  './index.js',
+  './countries.json', // Si tu utilises un fichier JSON pour les données
+  './service-worker.js'
 ];
 
 // Installer le Service Worker et mettre en cache les fichiers

@@ -21,7 +21,7 @@ async function getCountries() {
 function showCountries(numberOfCountries, filter_result) 
 {
 
-  console.log(countries);
+  //console.log(countries);
 
   if (filter_result === null) {
 
