@@ -1,8 +1,24 @@
 
+@font-face {
+  font-family: "JoeFont";
+  src: url('DMSerifDisplay-Italic.ttf');
+}
+
+
+body
+{
+  background-color: #fef7f7;
+}
+
 .filter-container {
   text-align: center;
   padding-bottom: 20px;
 }
+
+.filter-container
+  {
+    display: block;
+  }
 input {
   margin: 20px auto;
   display: block;
@@ -28,35 +44,66 @@ input[type="range"] {
   transform: translateY(-3px);
 }
 
-.countries-container
-  {
-    display: flex;
-    flex-wrap: wrap; /* Permet de passer à la ligne */
-    justify-content: space-between; /* Espace entre les éléments */
-  }
 
-.countries-container
+
+.filter-container img
 {
-  display: flex;
-    min-width: 280px;
-    /* border: 1px solid #16d9e7; */
-    background: white;
-    margin: 10px;
-    border-radius: 5px;
-    padding: 10px 20px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.084);
+  width: 10%;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: -15px;
 }
+
+.filter-container h2
+ {
+   font-family: "JoeFont";
+   color: #007bff;
+   font-weight: bold;
+ }
+
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet de passer à la ligne */
+  justify-content: space-between; /* Espace entre les éléments */
+  gap: 20px; /* Ajoute un espace entre les cartes */
+  text-align: center;
+}
+
+.text-align
+{
+  color: #007bff;
+  text-align: center;
+}
+
+
 .card {
-  flex: 1 1 calc(25% - 10px); /* Chaque élément prend 25% de la largeur moins l'espace */
-  margin: 5px;
-  background-color: black;
+  flex: 1 1 calc(25% - 20px); /* Chaque carte occupe 25% de la largeur du conteneur */
+  margin: 10px;
+  background-color: rgb(35, 30, 30);
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
   color: white;
   border-radius: 20px;
-  height: fit-content;
+  height: auto; /* Ajuste la hauteur selon le contenu */
+  min-height: 350px; /* Hauteur minimale pour rendre toutes les cartes uniformes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Répartit le contenu verticalement */
 }
+
+.card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3, .card h4 {
+  margin: 10px 0;
+}
+
   
 
 img {
@@ -72,3 +119,30 @@ li
   {
     list-style-type: none;
   }
+
+  select {
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    width: 18%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+  }
+  
+  select option {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+  }
+  

@@ -8,19 +8,33 @@
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
   <div class="filter-container">
+    <header>
+    <img src="./icons/official_logo.png" alt="Logo de la country app">
+     <h2>Joe's Country App</h2>
+    </header>
     <input type="text" id="inputSearch" placeholder="Rechercher">
     <div class="range-container">
       <input type="range" value="250" max="250" id="inputRange" oninput="document.getElementById('rangeValue').textContent=this.value">
       <span id="rangeValue">250</span>
     </div>
-    <button class="btnSort" id="minToMax">Tri croissant</button>
-    <button class="btnSort" id="maxToMin">Tri décroissant</button>
-    <button class="btnSort" id="alpha">Tri Alphabétique</button>
+    <div class="select">
+    <select>
+      <option selected hidden disabled>Trier</option>
+      <option value="1" class="choice">Alphabitique croissant (A-Z)</option>
+      <option value="2" class="choice">Alphabitique décroissant (Z-A)</option>
+      <option value="3" class="choice">Du moins peuplé au plus peuplé</option>
+      <option value="4" class="choice">Du plus peuplé au moin peuplé</option>
+      <option value="5" class="choice">Du plus petit au plus grand (Superficie)</option>
+      <option value="6" class="choice">Du plus grand au plus petit (Superficie)</option>
+    </select>
+  </div>
+    
   </div>
 
   <div class="countries-container"></div>

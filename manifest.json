@@ -1,13 +1,13 @@
 {
     "name": "Country App",
     "short_name": "Countries",
-    "start_url": "/index.html",
+    "start_url": "/Country-App",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#317EFB",
     "icons": [
       {
-        "src": "./icons/official_logo.jpg",
+        "src": "./icons/official_logo.png",
         "type": "image/jpg",
         "sizes": "192x192"
       },
