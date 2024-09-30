@@ -1,6 +1,6 @@
 {
     "name": "CountryApp",
-    "short_name": "Countries",
+    "short_name": "Countrie",
     "start_url": "/Country-App/",
     "display": "standalone",
     "background_color": "#ffffff",
