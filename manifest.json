@@ -1,5 +1,5 @@
 {
-    "name": "Country App",
+    "name": "CountryApp",
     "short_name": "Countries",
     "start_url": "/index.html",
     "display": "standalone",
