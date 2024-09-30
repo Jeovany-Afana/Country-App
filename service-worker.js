@@ -11,6 +11,7 @@ const urlsToCache = [
   './manifest.json',        // Cache le manifest pour PWA
   './icons/logo1.jpeg', // Cache les icônes
   './icons/official_logo.png',
+  './backTop.png',
   './DMSerifDisplay-Italic.ttf'
 ];
 
