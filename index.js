@@ -165,19 +165,18 @@ getCountries().then(() => showCountries(inputRange.value, inputSearch.value, sel
 
 
    // 2. Ensuite, enregistre le Service Worker pour la fonctionnalité hors ligne
-// if ('serviceWorker' in navigator) {
-//   window.addEventListener('load', () => {
-//       navigator.serviceWorker
-//           .register('./service-worker.js')
-//           .then(registration => {
-//               console.log('Service Worker enregistré avec succès', registration);
-//           })
-//           .catch(error => {
-//               console.log('Service Worker échec de l\'enregistrement:', error);
-//           });
-//   });
-// }
-
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+      navigator.serviceWorker
+          .register('./service-worker.js')
+          .then(registration => {
+              console.log('Service Worker enregistré avec succès', registration);
+          })
+          .catch(error => {
+              console.log('Service Worker échec de l\'enregistrement:', error);
+          });
+  });
+}
 // 3 - Passer les données à une variable
 
 // 4 - Créer une fonction d'affichage, et paramétrer l'affichage des cartes de chaque pays grace à la méthode MAP

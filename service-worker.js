@@ -10,7 +10,7 @@ const urlsToCache = [
   './countries.json',
   './manifest.json',        // Cache le manifest pour PWA
   './icons/logo1.jpeg', // Cache les icônes
-  './icons/official_logo.jpg'
+  './icons/official_logo.png'
 ];
 
 // Installer le Service Worker et mettre en cache les fichiers
