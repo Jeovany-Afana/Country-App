@@ -121,7 +121,7 @@ function showCountries(numberOfCountries, filter_result, searchValue)
       <h4>Capitale: ${country.capital}</h4>
       <h4>Continent: ${country.continents}</h4>
       <h4>Superficie: ${country.area} Km²</h4>
-      <h4>Fuso horaire: ${country.timezones.join('  ,')}</h4>
+      <h4>Fuseau horaire: ${country.timezones.join('  ,')}</h4>
       <h4>Indépendant: ${country.independent ? "Oui" : "Non"}</h4>
       <h4>Population: ${country.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</h4>
       </li>
